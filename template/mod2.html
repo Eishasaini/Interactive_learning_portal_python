@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 2</title>
+    <link rel="stylesheet" href='{% static "mod1.css" %}'
+</head>
+
+<div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='signup.html'></a>
+            </div>
+            <nav>
+              <form id='logout' action="/login/" method="post">
+                {% csrf_token %}
+            <ul id='MenuItems'>
+                <li><a href='/home/'>Home</a></li>
+                <li><a href='/aboutus/'>About Us</a></li>
+                <li><button class='loginbtn' style="width:auto;" name="logout" value="logout" form="logout">Logout</button></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+
+
+        <section>
+          <details open>
+            <summary>Casting In Python</summary>
+            <div>
+              <p>• There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.<br>
+          <br>• Casting in python is therefore done using constructor functions like:<br>
+          - int(): constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number).<br> 
+          <br>- float(): constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer).<br> 
+          <br>- str(): constructs a string from a wide variety of data types, including strings, integer literals and float literals.<br><br>
+                  •Examples:<br><br>
+                <img src= '{% static "Images/Casting1.jpg" %}'> <br>
+                <button class="submit-btn">
+                  <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_casting_int">Try it out</a>
+                </button>
+                <br><br>
+                  <img src='{% static "Images/Casting2.jpg" %}'><br>
+                  <button class="submit-btn">
+                    <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_float">Try it out</a>
+                  </button>
+                  <br></p>
+            </div>
+        <audio controls>
+          <source src='{% static "Audios/Casting In Python.mp3" %}' type="audio/mpeg">
+        </audio>
+          </details>
+          <details>
+            <summary>Strings</summary>
+            <div>
+              <p>1. In Python, Strings are arrays of bytes representing Unicode characters.<br><br>2. Strings in python are surrounded by either single quotation marks, or double quotation marks.<br>
+          <br>3. Assigning a string to a variable is done with the variable name followed by an equal sign and the string.<br><br>4. Square brackets can be used to access elements of the string.<br>
+                  <img src='{% static "Images/Strings1.jpg" %}'><br>
+                  <br>5. You can also assign string to a variable. It is done by adding the variable name followed by an equal sign and the string:<br>
+                  <img src='{% static "Images/Strings2.jpg" %}'><br>
+                  <br>6. Like many other popular programming languages, strings in Python are <b>arrays</b> of bytes representing unicode characters.<br>
+                  <br>However, Python does not have a character data type, a single character is simply a string with a length of 1.<br>
+                  Square brackets can be used to access elements of the string.<br>
+                  For Example:<br>
+                  <img src='{% static "Images/Strings3.jpg" %}'><br>
+                  The following Output would be '!' as it is the 12th character:<br>
+                  <img src='{% static "Images/Strings4.jpg" %}'>
+              </p>
+        
+            </div>
+            <audio controls>
+              <source src='{% static "Audios/Strings.mp3" %}' type="audio/mpeg">
+            </audio>
+          </details>
+          <details>
+            <summary>Boolean</summary>
+            <div>
+              <p>• The Python data type bool is used to store two values i.e True and False.<br>
+        • The output <class ‘bool’> indicates the variable is a boolean data type.<br>
+        • When you compare two values, the expression is evaluated and Python returns the Boolean answer.<br>
+        • It is used to represent the truth values of the expressions. For example<br><br>
+              <img src='{% static "Images/Boolean1.jpg" %}'><br><br>
+            The Output would be:<br><br>
+              <img src='{% static "Images/Boolean2.jpg" %}'><br><br>
+        •The bool() function allows you to evaluate any value, and give you True or False in return:<br><br>
+              <img src='{% static "Images/Boolean3.jpg" %}'><br><br>
+             The Output would be:<br><br>
+              <img src='{% static "Images/Boolean4.jpg" %}'><br><br><br>
+        
+             <img src='{% static "Images/Boolean5.jpg" %}'><br><br>
+             The Output would be:<br><br>
+              <img src='{% static "Images/Boolean4.jpg" %}'><br><br>
+        
+        </class></p>
+            </div>
+            <audio controls>
+              <source src='{% static "Audios/Boolean.mp3" %}' type="audio/mpeg">
+            </audio>
+          </details>
+
+          <details>
+            <summary>Quiz</summary>
+            <br>
+              <button class="submit-btn">
+                <a href="/mod2-quiz/">Start now</a>
+              </button>
+            
+        
+          </details>
+          
+        </section></div>

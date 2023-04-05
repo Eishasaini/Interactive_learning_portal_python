@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+
+<body>
+	<div class="full-page">
+        <div class="navbar">
+            <nav>
+                <form id='logout' action="/login/" method="post">
+                    {% csrf_token %}
+                <ul id='MenuItems'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><button class='loginbtn' style="width:auto;" name="logout" value="logout" form="logout">Logout</button></li>
+                </ul>
+            </nav>
+        </div>
+    
+
+	
+ 
+   
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                    <h3>Get Started</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <form id='mod1' action="/mod1/" method="post" >
+                        
+                    <p><b>This module contains:</b><br>
+                        - Introducation of Python<br> - Installion of Python<br> - Syntax<br> - Comments<br> - Variables<br>
+                        - Data types in Python
+
+	<br>
+	
+</p>
+                        <a href="/mod1/">Read More</a>
+                </div>
+            </div>
+        </div>
+ <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                    <h3>Module 2</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p><b>This module contains:</b><br>
+                        - Casting In Python<br> - Strings<br> - Boolean
+</p>
+                        <a href="/mod2/">Read More</a>
+                </div>
+            </div>
+        </div>
+ <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                    <h3>Module 3</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p><b>This module contains:</b><br>
+                        1. Operators<br> 2. Numbers
+</p>
+                        <a href="/mod3/">Read More</a>
+                </div>
+            </div>
+        </div>
+ <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                    <h3>Module 4</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p><b>This module contains:</b><br>
+                        - Lists<br> - Tuples<br> - Sets<br> - Dictionaries
+</p>
+                        <a href="/mod4/">Read More</a>
+                </div>
+            </div>
+        </div>
+ <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                    <h3>Module 5</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p><b>This module contains:</b><br>
+                        - If/Else Loops<br> - While and For Loops
+</p>
+                        <a href="/mod5/">Read More</a>
+                </div>
+            </div>
+        </div>
+ <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                    <h3>Module 6</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p><b>This module contains:</b><br>
+                        - Python Functions<br> - Python Lambda
+</p>
+                        <a href="/mod6/">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                    <h3>Module 7</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p><b>This module contains:</b><br>
+                        - Arrays in Python<br> - Classes and Objects<br> - Inhertance
+                    </p>
+                        <a href="/mod7/">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                    <h3>Module 8</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p><b>This module contains:</b><br>
+                        - File handling
+
+                    </p>
+                        <a href="/mod8/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+

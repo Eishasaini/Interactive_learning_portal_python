@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    <link rel="stylesheet" href="{% static 'error.css' %}">
+</head>
+<body>
+    <body>
+        <div class="full-page">
+            <div class="navbar">
+                <nav>
+                    <form id='logout' action="/login/" method="post">
+                        {% csrf_token %}
+                    <ul id='MenuItems'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About Us</a></li>
+                        <li><a href='#'>Services</a></li>
+                        <li><a href='#'>Contact</a></li>
+                        <li><button class='loginbtn' style="width:auto;" name="logout" value="logout" form="logout">Login</button></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section>
+                <details open>
+                    <br><br><br><br><br><br><br><br>
+                    <br><br>
+                  <div class="error">
+                    
+                    <p> 
+                        <b>Invalid Email-Id or password
+                     </p>
+                  </div>
+        
+                </details>
+              
+
+
+
+		
+</body>>

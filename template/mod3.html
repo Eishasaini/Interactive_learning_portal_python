@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"> xmlbeans="http://www.w3.org/1999/html"> lang="en" xmlbeans="http://www.w3.org/1999/html" xmlbeans="http://www.w3.org/1999/html"
+      xmlbeans="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Module 3</title>
+    <link rel="stylesheet" href='{% static "mod1.css" %}'>
+</head>
+
+<div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='signup.html'></a>
+            </div>
+            <nav>
+                <form id='logout' action="/login/" method="post">
+                    {% csrf_token %}
+                <ul id='MenuItems'>
+                    <li><a href='/home/'>Home</a></li>
+                    <li><a href='/aboutus/'>About Us</a></li>
+                    <li><button class='loginbtn' style="width:auto;" name="logout" value="logout" form="logout">Logout</button></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+
+
+<section>
+    <h1>Module 3<br><br></h1>
+  <details open>
+    
+        <summary><b>1. Operators</b></summary>
+    <div>
+        <p> Operators are special symbols in Python that carry out arithmetic or logical computation. Python Operators in general are used to perform operations on values and variables.<br>
+            These are standard symbols used for the purpose of logical and arithmetic operations.<br><br>
+            In this tutorial, you'll learn everything about different types of operators in Python, their syntax and how to use them with examples.</p>
+    </div>
+
+    <h3>Various Types of Operators:</h3>
+
+       <p> Python has many types of Operators that are stated as below:<br> </p>
+
+         <ul>
+        <li> Arithmetic Operator</li>
+        <li> Logical Operator</li>
+        <li> Comparison Operator</li>
+        <li> Bitwise Operator</li>
+        <li> Assignment Operator</li>
+        <li> Identity Operator</li>
+        <li> Membership Operator</li>
+
+            </ul>
+
+            <audio controls>
+              <source src='{% static "Audios/Operators.mp3" %}' type="audio/mpeg">
+            </audio>
+
+</details>
+
+
+  <details>
+    <summary> Arithmetic Operator </summary>
+      <div>Python programming language supports different kinds of arithmetic operators for both integer 
+        and floating point like addition, subtraction, multiplication, division and so on.<br><br>
+       
+        <img src='{% static "Images/Arithmetic.jpg" %}'>
+  
+
+  </details>
+
+  <details>
+    <summary> Logical Operator </summary>
+      <div>Logical operators are used for performing AND, OR and NOT operations. It either returns True or 
+        False according to the condition.<br><br>
+      
+      <img src='{% static "Images/Logical.jpg" %}'>
+
+  </details>
+
+  <details>
+    <summary> Comparison Operator </summary>
+      <div><p>Comparison operators are used to compare values. It returns either True or False according to 
+        the condition.<br><br>
+      
+      <img src='{% static "Images/Comparison.jpg" %}'>
+
+  </details>
+
+  <details>
+    <summary> Bitwise Operator </summary>
+      <div><p>Bitwise operators act on operands as if they were strings of binary digits. They operate bit by bit, hence the name.<br><br>
+
+      For example, 2 is 10 in binary and 7 is 111.
+          In the table below: Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)<br><br>
+      
+      <img src='{% static "Images/Bitwise.jpg" %}'>
+
+  </details>
+
+  <details>
+    <summary> Assignment Operator </summary>
+      <div><p>Assignment operators are used in Python to assign values to variables.<br><br>
+
+           a = 5 is a simple assignment operator that assigns the value 5 on the right to the variable a on the left.
+
+        There are various compound operators in Python like a += 5 that adds to the variable and later assigns 
+        the same. It is equivalent to a = a + 5.<br><br>
+      
+      <img src='{% static "Images/Assignment.jpg" %}'>
+
+  </details>
+
+  <details>
+    <summary> Identity Operator </summary>
+      <div><p>It comes under special operators.'is' and 'is not' are the identity operators in Python. They are used to check if two values 
+        (or variables) are located on the same part of the memory.<br>Two variables that are equal does not imply that they are identical.<br><br>
+      
+      <img src='{% static "Images/Identity.jpg" %}'>
+
+  </details>
+
+  <details>
+    <summary> Membership Operator </summary>
+      <div><p>It comes under special operators.'in' and 'not in' are the membership operators in Python. They are used to test whether a value or 
+        variable is found in a sequence (string, list, tuple, set and dictionary).<br>
+          In a dictionary we can only test for presence of key, not the value.<br><br>
+
+      <img src='{% static "Images/Membership.jpg" %}'>
+
+      </div>
+  </details>
+
+    <details>
+    <summary><b>2. Numbers</b></summary>
+        <div><p>
+            Python supports integers, floating-point numbers and complex numbers. They are defined as 'int', 'float', and 'complex' classes in Python.
+
+    </details>
+
+    <details>
+    <summary> Int </summary>
+      <div><p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.Following are examples of int:<br><br>
+      <img src='{% static "Images/Int.jpg" %}'>
+
+  </details>
+
+    <details>
+    <summary> Float </summary>
+      <div><p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.Integers and floating points 
+        are separated by the presence or absence of a decimal point. <br>For instance, 6 is an integer whereas 6.0 is a floating-point number.
+        Following are examples of float:<br><br>
+      <img src='{% static "Images/Float.jpg" %}'>
+
+  </details>
+
+    <details>
+    <summary> Complex</summary>
+      <div><p>Complex numbers are written in the form, x + yj, where x is the real part and y is the imaginary part.<br><br>
+    
+      <img src='{% static "Images/Complex.jpg" %}'>
+
+  </details>
+
+     <details>
+    <summary> Other Functions</summary>
+      <div><p>We can use the 'type()' function to know which class a variable or a value belongs to and also 'isinstance()' function to check if it belongs to a particular class.<br><br>
+          Let's look at an example:<br><br>
+      
+      <img src='{% static "Images/OtherFunctions.jpg" %}'>
+
+  </details>
+
+  
+  <details>
+    <summary>Quiz</summary>
+    <br>
+      <button class="submit-btn">
+        <a href="/mod3-quiz/">Start now</a>
+      </button>
+  </details>
+
+</section>
+</div></html>
